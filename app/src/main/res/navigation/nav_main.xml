@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ni.edu.uca.navgabrielmerino.loginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/acLoginMenu"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="ni.edu.uca.navgabrielmerino.menuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/acMenuKilo"
+            app:destination="@id/kiloFragment" />
+        <action
+            android:id="@+id/acMenuMultiplo"
+            app:destination="@id/multiploFragment" />
+        <action
+            android:id="@+id/acMenuRaiz"
+            app:destination="@id/raizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kiloFragment"
+        android:name="ni.edu.uca.navgabrielmerino.kiloFragment"
+        android:label="fragment_kilo"
+        tools:layout="@layout/fragment_kilo" />
+    <fragment
+        android:id="@+id/multiploFragment"
+        android:name="ni.edu.uca.navgabrielmerino.multiploFragment"
+        android:label="fragment_multiplo"
+        tools:layout="@layout/fragment_multiplo" />
+    <fragment
+        android:id="@+id/raizFragment"
+        android:name="ni.edu.uca.navgabrielmerino.raizFragment"
+        android:label="fragment_raiz"
+        tools:layout="@layout/fragment_raiz" />
+</navigation>
